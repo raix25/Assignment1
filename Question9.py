@@ -35,11 +35,12 @@ def list_all_recipes():
 def remove_recipe():
     recipe_name= input("enter the recipe name to remove:")
     if recipe_name in recipe:
-        del recipe[recipe_name] 
+        del recipe[recipe_name] #for deleting the recipe 
         print(f'Recipe "{recipe_name}" removed successfully!')
     else:
         print("Recipe not found!")
 
+#display the result 
 def main():
     while True: 
         print("\nAvailable options:\n")
